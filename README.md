@@ -1,31 +1,27 @@
-<h1 align="center">Hello there 👋, I'm John Doe</h1>
+<h1 align="center">Hello there 👋, I'm RaymonDev</h1>
 <h3 align="center">Software Engineer, Open Source Contributor, and Web Enthusiast</h3>
 
-<p align="left"> <img src="https://komarev.com/ghpvc/?username=johndoe&label=Profile%20views&color=0e75b6&style=flat" alt="johndoe" /> </p>
+<p align="left"> <img src="https://komarev.com/ghpvc/?username=RaymonDev&label=Profile%20views&color=0e75b6&style=flat" alt="RaymonDev" /> </p>
 
-<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=johndoe" alt="johndoe" /></a> </p>
+<p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=RaymonDev" alt="RaymonDev" /></a> </p>
 
-- 🔭 I’m currently working on ~[My Personal Website](https://www.johndoe.com)~
+- 🔭 I’m currently working on ~Three Dots~
 
-- 🌱 I’m currently learning more about **React and Web Performance**
+- 🌱 I’m currently learning more about **Java**
 
-- 👨‍💻 All of my projects are available at [https://github.com/johndoe](https://github.com/johndoe)
+- 👨‍💻 All of my projects are available at [(https://github.com/RaymonDev)](https://github.com/RaymonDev)
 
-- 📝 I occasionally write articles on [johndoe.hashnode.dev](johndoe.hashnode.dev)
+- 💬 Ask me about anything related to **Python, Data Analysis, and Data Science**
 
-- 💬 Ask me about anything related to **Web Development, React, and Performance Optimization.**
+- 📫 How to reach me **ramongallinadcorti@gmail.com**
 
-- 📫 How to reach me **john.doe@example.com**
-
-- 📄 Know about my experiences [Here](https://drive.google.com/file/d/1A2B3C4D5E6F7G8H9I0J1K2L3M4N5O6P7/view?usp=sharing)
-
-- ⚡ Fun fact **I love hiking and photography**
+- ⚡ Fun fact **I love physics**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://twitter.com/@johndoe" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@johndoe" height="30" width="40" /></a>
-<a href="https://linkedin.com/in/https://www.linkedin.com/in/john-doe-123456/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/john-doe-123456/" height="30" width="40" /></a>
-<a href="https://stackoverflow.com/users/123456/johndoe" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stackoverflow.svg" alt="johndoe" height="30" width="40" /></a>
+<a href="https://twitter.com/@raymon_frg" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="@raymon_frg" height="30" width="40" /></a>
+<a href="https://linkedin.com/in/https://www.linkedin.com/in/ramon-gallinad-corti-463468262/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="https://www.linkedin.com/in/ramon-gallinad-corti-463468262/" height="30" width="40" /></a>
+<a href="https://stackoverflow.com/users/20901109/raymondev" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/stackoverflow.svg" alt="raymondev" height="30" width="40" /></a>
 </p>
 
 <h3 align="left">Languages and Tools:</h3>
