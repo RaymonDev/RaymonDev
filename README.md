@@ -7,9 +7,11 @@
 
 - 🔭 I’m currently working on **Three Dots**
 
+- 🔨 I built [PokeClimaES](https://raymondev.github.io/PokeClimaES/)
+
 - 🌱 I’m currently learning **Java, Django and ML**
 
-- 👨‍💻 All of my projects are available at [https://github.com/RaymonDev](https://github.com/RaymonDev)
+- 👨‍💻 All of my projects are available [here](https://github.com/RaymonDev)
 
 - 💬 Ask me about **Python, data analysis and data science**
 
