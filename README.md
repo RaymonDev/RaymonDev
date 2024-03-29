@@ -15,7 +15,7 @@
 
 - 📫 How to reach me **ramongallinadcorti@gmail.com**
 
-- 📄 Know about my experiences [https://www.linkedin.com/in/ramon-gallinad-corti-463468262/](https://www.linkedin.com/in/ramon-gallinad-corti-463468262/)
+- 📄 Know about my experiences [here](https://www.linkedin.com/in/ramon-gallinad-corti-463468262/)
 
 - ⚡ Fun fact **I once wrestled a unicorn.**
 
