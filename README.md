@@ -7,15 +7,7 @@
 
 - 🌱 I’m learning **Java, Machine Learning and data science**
 
-- 💻 I'm a proud member of [Microsoft Learn Student Ambassadors](https://mvp.microsoft.com/studentambassadors)
-
-- 👨‍💻 All of my projects are available at [https://github.com/RaymonDev](https://github.com/RaymonDev)
-
-- 📫 How to reach me **ramongallinadcorti@gmail.com**
-
-- 📄 Know about my experiences [here](https://www.linkedin.com/in/ramon-gallinad-corti-463468262/)
-
-- ⚡ Fun fact **I once wrestled a unicorn.**
+- 👨‍💻 All of my projects are available [here](https://github.com/RaymonDev)
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
