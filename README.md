@@ -5,7 +5,7 @@
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=raymondev" alt="raymondev" /></a> </p>
 
-- 🌱 I’m learning **Java, Machine Learning and data science**
+- 🌱 I’m currently learning deep space telecommunications systems
 
 - 👨‍💻 All of my projects are available [here](https://github.com/RaymonDev)
 
