@@ -3,18 +3,13 @@
   <h3>Telecommunications Engineering Student | ML Enthusiast | Open Source</h3>
   
   <p>
-    <a href="https://twitter.com/raymon_frg" target="_blank">
-      <img src="https://img.shields.io/badge/Twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white" alt="Twitter" />
-    </a>
     <a href="https://linkedin.com/in/ramon-gallinad-corti-463468262" target="_blank">
       <img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn" />
     </a>
   </p>
 
-  <p>🌱 Currently learning deep space telecommunications systems.</p>
+  <p>📡 Currently learning deep space telecommunications systems 📡</p>
 </div>
-
-<br/>
 
 <div align="center">
   <h3>🛠️ Tech Stack & Tools</h3>
