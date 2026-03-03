@@ -11,6 +11,8 @@
   <p>📡 Currently learning deep space telecommunications systems 📡</p>
 </div>
 
+</br>
+
 <div align="center">
   <h3>🛠️ Tech Stack & Tools</h3>
   
@@ -39,7 +41,6 @@
 <br/>
 
 <div align="center">
-  <h3>🐍 Contribution Graph</h3>
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/RaymonDev/RaymonDev/output/github-contribution-grid-snake-dark.svg">
     <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/RaymonDev/RaymonDev/output/github-contribution-grid-snake.svg">
