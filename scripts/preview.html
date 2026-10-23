@@ -1,0 +1,112 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Profile preview</title>
+<style>
+  :root { --bg:#0d1117; --fg:#e6edf3; --muted:#7d8590; --border:#30363d; --card:#0d1117; --chip:#21262d; }
+  [data-theme="light"] { --bg:#ffffff; --fg:#1f2328; --muted:#656d76; --border:#d0d7de; --card:#ffffff; --chip:#f6f8fa; }
+  * { box-sizing: border-box; }
+  body { margin:0; background:var(--bg); color:var(--fg);
+         font:14px/1.5 -apple-system,BlinkMacSystemFont,"Segoe UI","Noto Sans",Helvetica,Arial,sans-serif; }
+  header { border-bottom:1px solid var(--border); padding:14px 24px; display:flex; gap:12px; align-items:center; }
+  header .note { color:var(--muted); font-size:12px; margin-right:auto; }
+  button { background:var(--chip); color:var(--fg); border:1px solid var(--border); border-radius:6px;
+           padding:5px 12px; font:inherit; cursor:pointer; }
+  button[aria-pressed="true"] { border-color:#2f81f7; }
+  main { max-width:1280px; margin:24px auto; padding:0 24px; display:flex; gap:24px; }
+  aside { width:296px; flex:none; }
+  .avatar { width:296px; height:296px; border-radius:50%; border:1px solid var(--border);
+            background:var(--chip); display:grid; place-items:center; font-size:96px; color:var(--muted); }
+  aside h1 { font-size:24px; margin:16px 0 0; line-height:1.25; }
+  aside p { color:var(--muted); font-size:20px; font-weight:300; margin:0; }
+  .readme { flex:1; min-width:0; border:1px solid var(--border); border-radius:6px; background:var(--card); padding:24px; }
+  .readme .path { font-size:12px; color:var(--muted); margin:-8px 0 16px; font-family:ui-monospace,Consolas,monospace; }
+  .readme img { max-width:100%; }
+  .center { text-align:center; }
+  .center p { margin:12px 0; }
+  #slot-bottom #links { margin-top:20px; }
+  sub { color:var(--muted); }
+  @media (max-width: 1000px) { aside { display:none; } }
+</style>
+</head>
+<body data-theme="dark">
+<header>
+  <span class="note">Local preview: nothing here is committed. Images come from <code>dist/</code>.</span>
+  <button data-set="dark" aria-pressed="true">Dark</button>
+  <button data-set="light" aria-pressed="false">Light</button>
+  <button id="replay">Replay header</button>
+  <button id="links-pos">Links: bottom</button>
+</header>
+<main>
+  <aside>
+    <div class="avatar">R</div>
+    <h1>Ramon</h1>
+    <p>RaymonDev</p>
+  </aside>
+  <article class="readme">
+    <div class="path">RaymonDev / README.md</div>
+    <div class="center">
+      <div id="slot-top"></div>
+      <img class="themed" data-name="header" alt="Hi, I'm Ramon. Telecommunications engineering student, ML enthusiast, open source.">
+
+      <img class="themed" data-name="station" alt="Live telemetry from NASA's Deep Space Network complex in Robledo de Chavela, Madrid">
+      <p><sub>Live from NASA's Deep Space Network · Robledo de Chavela, Madrid · refreshed every few hours</sub></p>
+
+      <p>
+        <img src="https://img.shields.io/badge/C-00599C?style=flat-square&logo=c&logoColor=white">
+        <img src="https://img.shields.io/badge/C%2B%2B-00599C?style=flat-square&logo=c%2B%2B&logoColor=white">
+        <img src="https://img.shields.io/badge/Java-ED8B00?style=flat-square&logo=openjdk&logoColor=white">
+        <img src="https://img.shields.io/badge/Python-3776AB?style=flat-square&logo=python&logoColor=white">
+        <img src="https://img.shields.io/badge/JavaScript-F7DF1E?style=flat-square&logo=javascript&logoColor=black">
+        <img src="https://img.shields.io/badge/MATLAB-0076A8?style=flat-square&logo=mathworks&logoColor=white">
+        <img src="https://img.shields.io/badge/TensorFlow-FF6F00?style=flat-square&logo=tensorflow&logoColor=white">
+        <img src="https://img.shields.io/badge/PyTorch-EE4C2C?style=flat-square&logo=pytorch&logoColor=white">
+        <img src="https://img.shields.io/badge/scikit--learn-F7931E?style=flat-square&logo=scikit-learn&logoColor=white">
+        <img src="https://img.shields.io/badge/Pandas-150458?style=flat-square&logo=pandas&logoColor=white">
+        <img src="https://img.shields.io/badge/OpenCV-5C3EE8?style=flat-square&logo=opencv&logoColor=white">
+        <img src="https://img.shields.io/badge/Android-3DDC84?style=flat-square&logo=android&logoColor=white">
+        <img src="https://img.shields.io/badge/Arduino-00979D?style=flat-square&logo=arduino&logoColor=white">
+        <img src="https://img.shields.io/badge/Docker-2496ED?style=flat-square&logo=docker&logoColor=white">
+        <img src="https://img.shields.io/badge/Azure-0089D6?style=flat-square&logo=microsoftazure&logoColor=white">
+      </p>
+
+      <img class="snake" alt="github contribution grid snake animation">
+
+      <div id="slot-bottom">
+        <p id="links">
+          <a href="https://linkedin.com/in/ramon-gallinad-corti-463468262"><img src="https://img.shields.io/badge/LinkedIn-0077B5?style=for-the-badge&logo=linkedin&logoColor=white" alt="LinkedIn"></a>
+          <a href="https://distortedsignal.com"><img src="https://img.shields.io/badge/distortedsignal.com-000000?style=for-the-badge&logo=About.me&logoColor=white" alt="Website"></a>
+        </p>
+      </div>
+    </div>
+  </article>
+</main>
+<script>
+  const snake = {
+    dark: "https://raw.githubusercontent.com/RaymonDev/RaymonDev/output/github-contribution-grid-snake-dark.svg",
+    light: "https://raw.githubusercontent.com/RaymonDev/RaymonDev/output/github-contribution-grid-snake.svg",
+  };
+  let theme = "dark";
+  function apply(replay) {
+    document.body.dataset.theme = theme;
+    const bust = replay ? "?r=" + Date.now() : "";
+    for (const img of document.querySelectorAll("img.themed")) {
+      if (replay || !img.src.includes(`-${theme}.svg`)) img.src = `${img.dataset.name}-${theme}.svg${bust}`;
+    }
+    document.querySelector("img.snake").src = snake[theme];
+    for (const b of document.querySelectorAll("[data-set]")) b.setAttribute("aria-pressed", b.dataset.set === theme);
+  }
+  for (const b of document.querySelectorAll("[data-set]")) b.onclick = () => { theme = b.dataset.set; apply(true); };
+  document.getElementById("replay").onclick = () => apply(true);
+  let linksTop = false;
+  document.getElementById("links-pos").onclick = (e) => {
+    linksTop = !linksTop;
+    document.getElementById(linksTop ? "slot-top" : "slot-bottom").append(document.getElementById("links"));
+    e.target.textContent = `Links: ${linksTop ? "top" : "bottom"}`;
+  };
+  apply(false);
+</script>
+</body>
+</html>

@@ -1,0 +1,48 @@
+name: Generate Profile Images
+
+on:
+  schedule:
+    # Every 3 hours, so the DSN Madrid card stays fresh (the snake rides along)
+    - cron: "17 */3 * * *"
+  workflow_dispatch:
+  push:
+    branches:
+    - master
+    - main
+
+jobs:
+  generate:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # Header and DSN station cards; the station still renders ("NO SIGNAL") if the feed is down
+      - name: Generate header and station SVGs
+        run: |
+          pip install numpy
+          python scripts/build.py --out dist
+
+      - name: Generate github-contribution-grid-snake.svg
+        uses: Platane/snk/svg-only@v3
+        with:
+          github_user_name: ${{ github.repository_owner }}
+          outputs: |
+            dist/github-contribution-grid-snake.svg
+            dist/github-contribution-grid-snake-dark.svg?palette=github-dark
+
+      # Replaces the whole output branch, so every image must be built in this one job
+      - name: Push to output branch
+        uses: crazy-max/ghaction-github-pages@v3.1.0
+        with:
+          target_branch: output
+          build_dir: dist
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
