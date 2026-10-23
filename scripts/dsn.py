@@ -8,6 +8,9 @@ import xml.etree.ElementTree as ET
 DSN_URL = "https://eyes.nasa.gov/dsn/data/dsn.xml"
 CONFIG_URL = "https://eyes.nasa.gov/dsn/config.xml"
 SITE = "mdscc"
+# config.xml puts every complex ~0.19° of latitude too close to the equator
+# (Madrid lands 21 km south), so the coordinates are pinned here instead.
+LOCATION = (40.429167, -4.249722)
 PLACEHOLDERS = {"DSN", "DSS", ""}
 
 
@@ -60,5 +63,4 @@ def madrid() -> dict:
     ms = _num(station.get("timeUTC")) if station is not None else -1
     when = (dt.datetime.fromtimestamp(ms / 1000, dt.timezone.utc) if ms > 0
             else dt.datetime.now(dt.timezone.utc))
-    return {"site": site.get("friendlyName", "Madrid"), "lat": _num(site.get("latitude")),
-            "lon": _num(site.get("longitude")), "time": when, "dishes": dishes}
+    return {"site": site.get("friendlyName", "Madrid"), "time": when, "dishes": dishes}

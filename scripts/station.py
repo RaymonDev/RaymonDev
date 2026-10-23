@@ -6,6 +6,7 @@ import random
 import numpy as np
 
 import dish3d
+from dsn import LOCATION
 from svgterm import THEMES, Clock, Grid, animate_frames, animate_rows, num, svg_doc, text_el
 
 WIDTH = 840
@@ -50,6 +51,13 @@ def _range(km: float) -> str:
     return f"{km / 1e6:.2f} Mkm" if km >= 1e6 else f"{km:,.0f} km"
 
 
+def _dms(lat: float, lon: float) -> str:
+    def part(v, pos, neg):
+        s = round(abs(v) * 3600)
+        return f"{s // 3600}°{s % 3600 // 60:02d}'{s % 60:02d}\"{pos if v >= 0 else neg}"
+    return f"{part(lat, 'N', 'S')}  {part(lon, 'E', 'W')}"
+
+
 def _dish_label(d: dict) -> tuple[str, str]:
     name = d["name"].replace("DSS", "DSS ")
     size = d["type"][:2] + " m" if d["type"][:2].isdigit() else ""
@@ -72,14 +80,12 @@ def _panel(snap: dict | None) -> tuple[Grid, dict | None, int | None]:
     g.put(2, 0, "─" * W, "n")
     g.put(16, 0, "─" * W, "n")
     g.put(21, 2, "LIVE · eyes.nasa.gov/dsn", "d")
+    g.put(1, 0, _dms(*LOCATION), "d")
     if snap is None:
-        g.put(1, 0, "40.24°N  4.25°W", "d")
         g.put(3, 0, "NO SIGNAL", "r")
         g.put(5, 0, "DSN Now feed unreachable at build time", "d")
         return g, None, None
 
-    lat, lon = snap["lat"], snap["lon"]
-    g.put(1, 0, f"{abs(lat):.2f}°{'N' if lat >= 0 else 'S'}  {abs(lon):.2f}°{'W' if lon < 0 else 'E'}", "d")
     stamp = snap["time"].strftime("%Y-%m-%d %H:%M UTC")
     g.put(1, W - len(stamp), stamp, "d")
 
